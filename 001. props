@@ -1,0 +1,22 @@
+// 하위 컴포넌트에서 상위 컴포넌트로부터 전달받은 props를 super(props)라고 명시하지 않아도 this.props를 사용할 수 있다. super()라고만 적어도 React.Component로 props가 넘어간다.
+// 그런데 constructor 안에서 this.props를 사용하려면 super(props)라고 명시해주어야 한다.
+
+class Square extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: null,
+    };
+  }
+  render() {
+    return (
+      <button className='square' onClick={() => this.setState({ value: 'X' })}>
+        {this.state.value}
+      </button>
+    );
+  }
+}
+
+export default Square;
+
+// 이 코드에서는 super(props)라고 명시함. super()라고만 해도 render() 에서 this.props를 사용할 수 있음.
