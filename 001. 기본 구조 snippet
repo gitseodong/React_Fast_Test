@@ -1,0 +1,12 @@
+// rafce : react arrow function component export
+// rafce tab을 누르면 다음과 같은 코드가 만들어진다. A 대신 파일명이 들어감.
+
+import React from 'react'
+
+const A = () => {
+  return (
+    <div>A</div>
+  )
+}
+
+export default A
