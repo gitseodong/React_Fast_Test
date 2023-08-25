@@ -13,3 +13,8 @@
     "comments": false,
     "strings": true
 }
+
+
+// "emmet.includeLanguages": JavaScript와 TypeScript 파일에서도 React와 같이 Emmet를 사용하도록 설정합니다.
+// "emmet.triggerExpansionOnTab": Tab 키를 눌렀을 때 Emmet 자동 완성이 활성화되도록 합니다.
+// "editor.quickSuggestions": 문자열(string) 안에서도 자동 완성 제안이 나타나게 합니다.
